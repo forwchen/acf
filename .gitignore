@@ -1,0 +1,7 @@
+build
+detection.xml
+*.jpg
+*.png
+ped_det_acf_crop
+._*
+.DS_Store

@@ -1,0 +1,3 @@
+[Usage]
+# detect person in image and crop them
+./ped_det_acf_crop path/to/image/dir output/path
