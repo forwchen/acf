@@ -2,7 +2,7 @@
 This repo is a part of: https://bitbucket.org/fdesmedt/openframework/overview
 
 I made some modifications to it for my own use.
-And I used it a long time ago, *code for training the model is lost*...
+And I used it a long time ago, **code for training the model is lost** ...
 
 [Usage]
 # detect person in image and crop them
