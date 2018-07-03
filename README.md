@@ -9,8 +9,9 @@ And I used it a long time ago, **code for training the model is lost** ...
 
 detect person in image and crop them
 
-    ./ped_det_acf_crop path/to/image/dir output/path
+    ./ped_acf path/to/image/dir output/path
 
+The arguments must be directories, not individual files
 
 ## [Citations]
 *  Open Framework for combined pedestrian detection
