@@ -61,8 +61,8 @@ public:
         srand(time(NULL));
         std::string fn1, fn2;
         tostring(cnt, fn1);
-        return;
-		for (int d = 0; d < Ds.size(); d++) {
+        //return;
+	for (int d = 0; d < Ds.size(); d++) {
             cv::Rect myROI(Ds[d]->getX(),
                 Ds[d]->getY(),
                 Ds[d]->getWidth(),
@@ -70,7 +70,7 @@ public:
             cv::Mat croppedRef(Frame, myROI);
             tostring(d + 1, fn2);
             cv::imwrite(dir + fn1 + "-" + fn2 + ".jpg", croppedRef);
-            //cv::rectangle(Frame,cv::Point(Ds[d]->getX(), Ds[d]->getY()), cv::Point(Ds[d]->getX()+Ds[d]->getWidth(), Ds[d]->getY()+Ds[d]->getHeight()), Ds[d]->getColor(),3);
+            cv::rectangle(Frame,cv::Point(Ds[d]->getX(), Ds[d]->getY()), cv::Point(Ds[d]->getX()+Ds[d]->getWidth(), Ds[d]->getY()+Ds[d]->getHeight()), Ds[d]->getColor(),3);
         }
     }
 
