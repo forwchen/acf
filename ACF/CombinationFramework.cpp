@@ -69,15 +69,15 @@ int main(int argc, char** argv)
         //NMS
         DetectionList NMax = NMS.dollarNMS(DL);
 
-        // cout<<t.count()<<endl;
+        cout<<t.count()<<endl;
         //Write detections to file
         NMax.WriteDetections(cnt, FW, FP->getFilename());
 
         // Draw the detections and show them
         NMax.Draw(Frame, output, cnt);
-        //cv::imshow("Frame", Frame);
+        cv::imshow("Frame", Frame);
 
-        //cv::waitKey(0);
+        cv::waitKey(0);
     }
 
     delete FP;
